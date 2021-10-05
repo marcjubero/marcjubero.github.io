@@ -1,0 +1,155 @@
+baseURL = "http://www.marcjubero.dev"
+title = "Marc Juberó"
+theme = "LoveIt"
+languageCode = "en"
+defaultContentLanguage = "es"
+paginate = 20
+pygmentsStyle = "bw"
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
+enableEmoji = true
+# Enable Disqus comments
+# disqusShortname = "yourdiscussshortname"
+
+[params]
+  version = "0.2.X"
+  author = "Marc Juberó"
+  description = "Marc Juberó's personal website"
+  keywords = ["blog","developer","personal"]
+  info = "Developer & professional nerd"
+  images = []
+  dateFormat = "02-01-2006"
+  
+  colorScheme = "auto"
+  
+
+[params.home]
+  rss = 10
+  [params.home.profile]
+      enable = true
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.jpg"
+      title = "Marc Juberó"
+      subtitle = "Follow me to Mordor!"
+      typeit = true
+      social = true
+      disclaimer = ""
+    [params.home.posts]
+      enable = false
+      paginate = 6
+      defaultHiddenFromHomePage = false
+
+# Header config
+  [params.header]
+    desktopMode = "auto" # desktop header mode ("fixed", "normal", "auto")
+    mobileMode = "auto" # mobile header mode ("fixed", "normal", "auto")
+    [params.header.title]
+      logo = ""
+      name = "Marc Juberó"
+      pre = ""
+      post = ""
+      typeit = false
+      
+# Footer config
+  [params.footer]
+    enable = true
+    hugo = true
+    copyright = true
+    author = true
+    since = 2021
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+[params.social]
+  GitHub = "marcjubero"
+  Linkedin = "marcjubero"
+  Twitter = "marcjubero"
+  Instagram = "marcjubero"
+  Spotify = "wrrzag"
+  Email = "marcjubero@gmail.com"
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  
+[languages.en]
+languageName = "English"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 2
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "About"
+weight = 3
+url = "about/"
+
+[languages.es]
+languageName = "Español"
+
+[languages.es.params]
+author = "Marc Juberó"
+info = "Developer y nerd profesional"
+description = "Sitio personal de Marc Juberó"
+
+[[languages.es.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.es.menu.main]]
+name = "Proyectos"
+weight = 2
+url = "projects/"
+
+[[languages.es.menu.main]]
+name = "Sobre"
+weight = 3
+url = "about/"
+
+[languages.ca]
+languageName = "Català"
+
+[languages.ca.params]
+author = "Marc Juberó"
+info = "Developer y nerd professional"
+description = "Lloc personal de'n Marc Juberó"
+
+[[languages.ca.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.ca.menu.main]]
+name = "Projectes"
+weight = 2
+url = "projects/"
+
+[[languages.ca.menu.main]]
+name = "Sobre"
+weight = 3
+url = "about/"
+
+# Author config
+[author]
+  name = "Marc Juberó"
+  email = "marcjubero@gmail.com"
+  link = ""
+
+# Sitemap config
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
