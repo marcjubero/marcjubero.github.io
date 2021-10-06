@@ -19,7 +19,8 @@ jobs:
         id: sub
         with:
           _input-file: './config.toml'
-          __GA_MEASUREMENT_ID__: ${{ secrets.GA_MEASUREMENT_ID }}
+          _format-key: '%%key%%'
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
