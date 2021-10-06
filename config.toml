@@ -154,8 +154,8 @@ description = "Lloc personal de'n Marc Juberó"
   filename = "sitemap.xml"
   priority = 0.5
 
-[params.analytics]
-    enable = true
-    [params.analytics.google]
-      id = "__GA_MEASUREMENT_ID__"
-      anonymizeIP = true
+#[params.analytics]
+#    enable = true
+#    [params.analytics.google]
+#      id = "__GA_MEASUREMENT_ID__"
+#      anonymizeIP = true
