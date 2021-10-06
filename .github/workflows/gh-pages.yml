@@ -20,7 +20,7 @@ jobs:
         with:
           find: "__GA_MEASUREMENT_ID__"
           replace: ${{ secrets.GA_MEASUREMENT_ID }}
-          include: ".*config.toml"
+          include: "config.toml"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
