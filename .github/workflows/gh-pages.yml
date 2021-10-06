@@ -23,7 +23,7 @@ jobs:
       
       - name: Replace GA Measurement ID
         run: |
-          sed -i 's|__GA_MEASUREMENT_ID__|${{ secrets.GA_MEASUREMENT_ID }}|g' config.toml
+          sed -i -e 's|__GA_MEASUREMENT_ID__|${{ secrets.GA_MEASUREMENT_ID }}|g' config.toml
 
       - name: Build
         run: hugo --minify
